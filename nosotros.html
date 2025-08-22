@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Automoción</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="min-h-screen text-[#00FF00] flex flex-col">
+
+  <!-- Header -->
+  <header class="header-gradient text-white py-4 px-4 shadow-md fixed top-0 left-0 right-0 z-20">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">JC Automoción</h1>
+      <img src="images/logo.png" alt="Logo JC Automoción" class="h-11 sm:h-15 object-contain" />
+    </div>
+  </header>
+
+   <main class="px-4 pt-20 pb-16 max-w-screen-sm mx-auto text-center space-y-3 w-full">
+
+    <section class="bg-white bg-opacity-10 rounded-lg shadow-lg p-6 sm:p-10 card-gradient-border">
+      <h3 class="text-lg sm:text-xl font-semibold neon-green">¿Quiénes Somos?</h3>
+      <p class="neon-green">
+        En JC Automoción trabajamos
+        <br>para ayudarte a encontrar
+        <br>el vehículo que buscas.
+      </p>
+    </section>
+
+    <section class="bg-white bg-opacity-10 rounded-lg shadow-lg p-6 sm:p-10 card-gradient-border">
+      <h3 class="text-lg sm:text-xl font-semibold neon-green">Nuestra Historia</h3>
+      <p class="neon-green">
+        Desde nuestros inicios, nos comprometemos con
+        <br> la calidad y la satisfacción de nuestros clientes.
+      </p>
+    </section>
+
+    <section class="bg-white bg-opacity-10 rounded-lg shadow-lg p-6 sm:p-10 text-center card-gradient-border">
+      <h3 class="text-lg sm:text-xl font-semibold neon-green">Nuestros Valores</h3>
+      <ul class="list-disc list-inside neon-green">
+        <li>Confianza</li>
+        <li>Garantía</li>
+        <li>Atención personalizada</li>
+        <li>Pasión por el motor</li>
+      </ul>
+    </section>
+
+  </main>
+  <!-- Navbar inferior reducida -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-black text-white text-xs py-2 border-t border-green-700 z-10">
+    <div class="flex justify-around items-center max-w-md mx-auto">
+      <a href="./index.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-home text-base"></i>
+        <span>Inicio</span>
+      </a>
+      <a href="./cars.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-car text-base"></i>
+        <span>Vehículos</span>
+      </a>
+      <a href="./nosotros.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-info-circle text-base"></i>
+        <span>Nosotros</span>
+      </a>
+      <a href="./contacto.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-phone text-base"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+
+/* Estilos generales */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+  overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
+body {
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+  overflow-y: auto; /* Scroll vertical permitido */
+}
+
+/* Header con gradiente */
+.header-gradient {
+  background: linear-gradient(90deg, #00cc00, #ff3333, #3f51b5);
+}
+
+/* Efectos de texto neón */
+.neon-green {
+  color: #00FF00;
+  /*text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00; /* Efecto de neón verde */
+}
+
+.neon-red {
+  color: #FF0000;
+  /*text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000; /* Efecto de neón rojo */
+}
+
+.neon-blue {
+  color: #00BFFF;
+  /*text-shadow: 0 0 5px #00BFFF, 0 0 10px #00BFFF, 0 0 15px #00BFFF; /* Efecto de neón azul */
+}
+
+.neon-white {
+  color: #FFFFFF;
+  /*text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF; /* Efecto de neón blanco */
+}
+
+/* Fondo con imagen y capa translúcida */
+.background-autos {
+  background-image: url('images/fondo-autos.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.background-autos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Capa oscura para mejorar legibilidad */
+  z-index: 0;
+}
+
+.background-autos > * {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté encima de la capa translúcida */
+}
+
+/* Asegura que las imágenes no se arrastren ni tengan clic derecho */
+img {
+  pointer-events: auto; /* Permitir la interacción con las imágenes */
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Card con borde de gradiente */
+.card-gradient-border {
+  border: 4px solid;
+  border-image: linear-gradient(90deg, #00cc00, #ff3333, #3f51b5) 1;
+}
+
+/* Estilos para el botón de "Volver atrás" */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con algo de transparencia */
+  color: black;
+  border-color: #FFFFFF;
+  padding: 12px;
+  border-radius: 50%; /* Hace el botón circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  z-index: 30;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Efecto de hover */
+}
+
+/* Estilos para la imagen principal del coche */
+#carImage {
+  width: 100%;
+  max-height: 300px; /* Reducir la altura máxima de la imagen principal */
+  object-fit: contain; /* Asegura que la imagen sea completamente visible y se ajuste al contenedor */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra suave verde */
+}
+
+/* Estilos para las miniaturas de imágenes */
+/* Miniaturas */
+#thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Espacio entre las miniaturas */
+  justify-content: center; /* Centrar las miniaturas */
+}
+
+#thumbnails img {
+  width: 80px; /* Tamaño reducido para las miniaturas */
+  height: 60px; /* Tamaño reducido para las miniaturas */
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#thumbnails img:hover {
+  transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos para el layout principal */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+}
+
+.section-mini {
+  padding: 0.75rem;
+}
+
+.section-mini h3 {
+  margin-bottom: 0.25rem;
+}
+
+.section-mini p,
+.section-mini ul {
+  font-size: 0.85rem;
+}
+
+ul {
+  padding-left: 1.25rem; /* Agregar espacio a la izquierda de las listas */
+}
+
+/* Protección de imágenes (previene clic derecho y arrastre) */
+img {
+  pointer-events: auto; /* Permitir la interacción con las miniaturas */
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* style.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

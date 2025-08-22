@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Automoción</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="min-h-screen text-[#00FF00] flex flex-col">
+
+  <!-- Header -->
+  <header class="header-gradient text-white py-4 px-4 shadow-md fixed top-0 left-0 right-0 z-20">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">JC Automoción</h1>
+      <img src="images/logo.png" alt="Logo JC Automoción" class="h-11 sm:h-15 object-contain" />
+    </div>
+  </header>
+
+    <!-- Main content -->
+    <main class="px-4 pt-16 max-w-screen-md mx-auto text-center space-y-4 mt-16">
+
+        <!-- Logo más grande -->
+        <div class="flex justify-center -mt-20">
+            <img src="images/logo.png" alt="Logo JC Automoción" class="h-60 w-60 sm:h-72 sm:w-72 object-contain" />
+        </div>
+
+        <!-- Sección Contacto más cerca del header y centrada -->
+        <section
+            class="bg-white bg-opacity-10 rounded-lg shadow-lg p-6 sm:p-8 -mt-16 mx-auto w-full sm:w-3/4 card-gradient-border">
+            <h3 class="text-2xl sm:text-3xl font-semibold mb-4 neon-green">Contacto</h3>
+
+            <p class="neon-green mb-4">
+                Teléfono:<br>
+                <strong>670 490 252</strong>
+            </p>
+
+            <p class="neon-green mb-6">
+                Dirección:<br>
+                <strong>Km. 23.6, carretera Murcia, 30730 San Javier</strong>
+            </p>
+
+            <!-- Botones y WhatsApp -->
+            <div class="flex justify-center items-center space-x-4 mt-6">
+                <!-- WhatsApp Icono -->
+                <a href="https://wa.me/670490252" target="_blank" class="flex items-center">
+                    <i class="fab fa-whatsapp text-4xl text-green-500 hover:text-green-400"></i>
+                </a>
+
+                <!-- Botón de Ubicación -->
+                <a href="https://maps.app.goo.gl/QMQGXmcELx15e3Z26" target="_blank"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md text-sm sm:text-base flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Ubicación
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Navbar inferior -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 bg-black text-white text-xs sm:text-sm py-3 border-t border-green-700 z-10">
+        <div class="flex justify-around items-center max-w-md mx-auto">
+            <a href="./index.html" class="flex flex-col items-center hover:text-green-300">
+                <i class="fas fa-home text-lg sm:text-xl"></i>
+                <span>Inicio</span>
+            </a>
+            <a href="./cars.html" class="flex flex-col items-center hover:text-green-300">
+                <i class="fas fa-car text-lg sm:text-xl"></i>
+                <span>Vehículos</span>
+            </a>
+            <a href="./nosotros.html" class="flex flex-col items-center hover:text-green-300">
+                <i class="fas fa-info-circle text-lg sm:text-xl"></i>
+                <span>Nosotros</span>
+            </a>
+            <a href="./contacto.html" class="flex flex-col items-center hover:text-green-300">
+                <i class="fas fa-phone text-lg sm:text-xl"></i>
+                <span>Contacto</span>
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

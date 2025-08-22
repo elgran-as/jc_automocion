@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Automoción</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="min-h-screen text-[#00FF00] flex flex-col">
+
+  <!-- Header -->
+  <header class="header-gradient text-white py-4 px-4 shadow-md fixed top-0 left-0 right-0 z-20">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">JC Automoción</h1>
+      <img src="images/logo.png" alt="Logo JC Automoción" class="h-11 sm:h-15 object-contain" />
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-1 px-4 pt-20 pb-32 max-w-screen-md mx-auto text-center space-y-12 z-10 relative">
+
+    <!-- Título principal y logo-->
+    <section>
+      <h1 class="text-8xl sm:text-9xl font-extrabold mb-4 neon-green">
+        JC
+      </h1>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-2 neon-green">
+        AUTOMOCIÓN
+      </h2>
+
+      <!-- logo -->
+      <div class="flex justify-center mb-2">
+        <img src="images/logo.png" alt="Logo JC Automoción" class="h-48 w-48 sm:h-60 sm:w-60 object-contain" />
+      </div>
+
+    </section>
+
+    <!-- Sección adicional -->
+    <section>
+      <section class="-mt-20">
+        <h3 class="text-3xl sm:text-4xl font-semibold mt-1 mb-2 neon-red">San Javier, Murcia</h3>
+        <!-- Texto -->
+        <h4 class="text-xl sm:text-2xl font-medium neon-blue mb-4">
+          Vehículos exclusivos revisados
+          <br>
+          y con garantía
+        </h4>
+      </section>
+
+      <!-- Teléfono con separación -->
+      <p class="neon-white mb-10 text-2xl sm:text-3xl">
+        <i class="fas fa-phone mr-2"></i>
+        <strong>670 490 252</strong>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Navbar inferior -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-black text-white text-xs sm:text-sm py-3 border-t border-green-700 z-20">
+    <div class="flex justify-around items-center max-w-md mx-auto">
+      <a href="./index.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-home text-lg sm:text-xl"></i>
+        <span>Inicio</span>
+      </a>
+      <a href="./cars.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-car text-lg sm:text-xl"></i>
+        <span>Vehículos</span>
+      </a>
+      <a href="./nosotros.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-info-circle text-lg sm:text-xl"></i>
+        <span>Nosotros</span>
+      </a>
+      <a href="./contacto.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-phone text-lg sm:text-xl"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </nav>
+
+</body>
+
+</html>

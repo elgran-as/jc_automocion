@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Automoción</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="min-h-screen text-[#00FF00] flex flex-col">
+
+  <!-- Header -->
+  <header class="header-gradient text-white py-4 px-4 shadow-md fixed top-0 left-0 right-0 z-20">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">JC Automoción</h1>
+      <img src="images/logo.png" alt="Logo JC Automoción" class="h-11 sm:h-15 object-contain" />
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1 pt-24 px-4 max-w-screen-xl mx-auto overflow-y-auto">
+
+    <!-- Grid de vehículos -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <!-- Mazda 6 Luxury -->
+      <div
+        class="card-gradient-border w-full p-2 rounded-lg shadow-md cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-500"
+        onclick="window.location='car-detail.html?car=car1'">
+
+        <!-- Imagen más chica -->
+        <div class="w-full h-36 bg-black flex items-center justify-center rounded-t-lg mb-1">
+          <img src="images/car1/1.webp" alt="Mazda 6" class="max-h-full object-contain" />
+        </div>
+
+        <h2 class="text-base font-semibold text-center neon-green mb-1">Mazda 6 Luxury</h2>
+        <p class="text-xs text-center neon-blue">2015 · 175CV · Full Full · Biturbo</p>
+      </div>
+
+      <!-- Furgón Trafic -->
+      <div
+        class="card-gradient-border w-full p-2 rounded-lg shadow-md cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-500"
+        onclick="window.location='car-detail.html?car=car2'">
+
+        <div class="w-full h-36 bg-black flex items-center justify-center rounded-t-lg mb-1">
+          <img src="images/car2/1.webp" alt="Furgón Trafic" class="max-h-full object-contain" />
+        </div>
+
+        <h2 class="text-base font-semibold text-center neon-green mb-1">Furgón Trafic L2H1</h2>
+        <p class="text-xs text-center neon-blue">2021 · 120CV · Caja Larga · Impecable</p>
+      </div>
+      <!-- Mazda 6 Luxury -->
+      <div
+        class="card-gradient-border w-full p-2 rounded-lg shadow-md cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-500"
+        onclick="window.location='car-detail.html?car=car1'">
+
+        <!-- Imagen más chica -->
+        <div class="w-full h-36 bg-black flex items-center justify-center rounded-t-lg mb-1">
+          <img src="images/car1/1.webp" alt="Mazda 6" class="max-h-full object-contain" />
+        </div>
+
+        <h2 class="text-base font-semibold text-center neon-green mb-1">Mazda 6 Luxury</h2>
+        <p class="text-xs text-center neon-blue">2015 · 175CV · Full Full · Biturbo</p>
+      </div>
+
+      <!-- Furgón Trafic -->
+      <div
+        class="card-gradient-border w-full p-2 rounded-lg shadow-md cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-500"
+        onclick="window.location='car-detail.html?car=car2'">
+
+        <div class="w-full h-36 bg-black flex items-center justify-center rounded-t-lg mb-1">
+          <img src="images/car2/1.webp" alt="Furgón Trafic" class="max-h-full object-contain" />
+        </div>
+
+        <h2 class="text-base font-semibold text-center neon-green mb-1">Furgón Trafic L2H1</h2>
+        <p class="text-xs text-center neon-blue">2021 · 120CV · Caja Larga · Impecable</p>
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- Navbar inferior -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-black text-white text-xs sm:text-sm py-3 border-t border-green-700 z-10">
+    <div class="flex justify-around items-center max-w-md mx-auto">
+      <a href="./index.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-home text-lg"></i>
+        <span>Inicio</span>
+      </a>
+      <a href="./cars.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-car text-lg"></i>
+        <span>Vehículos</span>
+      </a>
+      <a href="./nosotros.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-info-circle text-lg"></i>
+        <span>Nosotros</span>
+      </a>
+      <a href="./contacto.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-phone text-lg"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Vehículo</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Header -->
+  <header class="header-gradient text-white py-4 px-4 shadow-md fixed top-0 left-0 right-0 z-20">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">JC Automoción</h1>
+      <img src="images/logo.png" alt="Logo JC Automoción" class="h-11 object-contain" />
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="pt-24 pb-20 max-w-5xl mx-auto"> <!-- margen superior por el header fijo -->
+
+    <!-- Botón Back fijo -->
+    <div class="fixed top-20 left-4 z-20">
+      <button id="backButton"
+        class="bg-green-500 bg-opacity-70 text-white py-2 px-4 rounded-full shadow hover:bg-opacity-90">
+        <i class="fas fa-arrow-left mr-2"></i>
+    </div>
+
+    <!-- Imagen principal -->
+    <section class="p-7">
+      <div class="relative">
+        <img id="carImage" src="" alt="Coche"
+          class="w-full h-72 sm:h-100 object-cover rounded-lg border border-green-500 shadow-lg">
+      </div>
+    </section>
+
+    <!-- Miniaturas en grilla fija -->
+    <section class="px-4 mb-6">
+      <div id="thumbnails" class="grid grid-cols-5 gap-2">
+        <!-- Se rellena con JS -->
+      </div>
+    </section>
+
+
+    <!-- Detalles del coche -->
+    <section class="px-4">
+      <h2 id="carTitle" class="text-2xl font-bold text-green-500 mb-2"></h2>
+      <p id="carDescription" class="text-sm text-green-300 mb-6"></p>
+
+      <h3 class="text-lg font-semibold text-green-400 mb-2">Especificaciones:</h3>
+      <ul id="carSpecs" class="list-none space-y-1 mb-6"></ul>
+
+      <h3 class="text-lg font-semibold text-green-400 mb-2">Estado / Revisiones:</h3>
+      <div id="repairDetails" class="space-y-1 mb-6"></div>
+
+      <h3 class="text-lg font-semibold text-green-400 mb-2">Información Comercial:</h3>
+      <ul id="carCommercial" class="list-none space-y-1"></ul>
+    </section>
+  </main>
+
+  <!-- Navbar inferior -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-black text-white text-xs sm:text-sm py-3 border-t border-green-700 z-20">
+    <div class="flex justify-around items-center max-w-md mx-auto">
+      <a href="./index.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-home text-lg sm:text-xl"></i>
+        <span>Inicio</span>
+      </a>
+      <a href="./cars.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-car text-lg sm:text-xl"></i>
+        <span>Vehículos</span>
+      </a>
+      <a href="./nosotros.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-info-circle text-lg sm:text-xl"></i>
+        <span>Nosotros</span>
+      </a>
+      <a href="./contacto.html" class="flex flex-col items-center hover:text-green-300">
+        <i class="fas fa-phone text-lg sm:text-xl"></i>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Script -->
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
